@@ -1,4 +1,4 @@
-// Если при проверке важны спец. знаки и их порядок
+// Если при проверке ВАЖНЫ спец. знаки и их порядок
 // например palindromeOne(“0_0 || ^-^ || 0_0”) => true
 // palindromeOne("0_0 (: /-\ :) 0_0") => false
 // palindromeOne("A man, a plan, a canal. Panama") => false
