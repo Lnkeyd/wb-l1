@@ -33,6 +33,6 @@ fs.readdir(dir, (err, files) => {
   console.log(
     `Ты сделал ${filesCount} ${useCase(
       filesCount, casesArr
-    )} (файлов). Молодчина! Поднажми ещё!`
+    )} (файлов). Молодчина! Осталось ${29 - filesCount}, Поднажми ещё!`
   );
 });
