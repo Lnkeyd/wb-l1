@@ -18,7 +18,8 @@
 //     Returns:
 //     Слово в правильной форме.
 
-function useCase(n, forms) {
+
+export function useCase(n, forms) {
   // Получаем 2 последних цифры нашего числа
   const strN = String(n).slice(-2);
 
