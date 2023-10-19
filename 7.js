@@ -8,8 +8,10 @@
 // d.	И так далее, пока все функции в массиве не будут вызваны по порядку.
 
 const functionChain = async (fnArr) => {
+  // Используем async/await чтобы дождаться результата 
   for (let i = 0; i < fnArr.length; i++) {
     await fnArr[i]();
+    // Затем выводим порядковый номер
     console.log(i);
   }
 };

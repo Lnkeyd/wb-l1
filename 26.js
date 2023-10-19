@@ -5,7 +5,9 @@
 
 function recursiveDOM(root) {
     console.log(root.tagName);
+    // Если элементов нет
     if (root.childElementCount < 0) return;
+    // Если есть, рекурсивно обходим DOM от уже этого элемента
     for (const child of root.children) {
         recursiveDOM(child);
     }

@@ -3,6 +3,7 @@
 //  представляющие различные фигуры, такие как прямоугольник, круг и треугольник.
 //  Реализуйте методы расчета площади и периметра для каждой фигуры.
 
+// Родительский класс
 class Shape {
   getArea() {
     return "Периметр фигуры";
@@ -13,6 +14,7 @@ class Shape {
   }
 }
 
+// Класс, наследующий св-ва (но не в нашем случае) и методы родительского
 class Rectangle extends Shape {
   constructor(width, height) {
     super();
@@ -29,6 +31,7 @@ class Rectangle extends Shape {
   }
 }
 
+// Класс, наследующий св-ва (но не в нашем случае) и методы родительского
 class Circle extends Shape {
   constructor(radius) {
     super();
@@ -44,6 +47,7 @@ class Circle extends Shape {
   }
 }
 
+// Класс, наследующий св-ва (но не в нашем случае) и методы родительского
 class Triangle extends Shape {
   constructor(side1, side2, side3) {
     super();
@@ -60,6 +64,7 @@ class Triangle extends Shape {
     )
       return "Неверные данные: у треугольника сумма любых двух сторон всегда должна быть больше третьей стороны!";
     const s = (this.side1 + this.side2 + this.side3) / 2;
+    // Формула площади треугольника
     return Math.sqrt(
       s * (s - this.side1) * (s - this.side2) * (s - this.side3)
     ).toFixed(2);
