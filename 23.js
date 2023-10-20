@@ -3,8 +3,7 @@
 // различных символов, наличие чисел и букв в разных регистрах. Выведите пользователю оценку
 // сложности пароля и предложите улучшения, если пароль слишком слабый.
 
-// 2 of lvl 1
-// and 2 of lvl 2
+// https://www.section.io/engineering-education/password-strength-checker-javascript/
 
 // The password is at least 8 characters long (?=.{8,}).
 
@@ -62,6 +61,10 @@ const helpWeak = (inputStr) => {
     for (key in checkCopy) {
       if (!checkCopy[key]) {
         if (key === "lengthSix" || key === "lengthEight") {
+          // Если встретили недобор по длине, добиваем рандомным символом в конец
+          // Также, если встретим потом ещё какой-нибудь ключ в false -
+          // Это поможет генерировать пароли различной длины
+          // Потому что сперва добиваем до 8, а потом ещё сплайсим недост. символы поверх того
           for (let i = res.length; i < 8; i++) {
             const suggestKey = suggestKeys[random(0, suggestKeys.length - 1)];
             const suggestChar =
@@ -93,7 +96,7 @@ const helpWeak = (inputStr) => {
 
   return {
     name: "Слабый пароль",
-    suggestions: resArr
+    suggestions: resArr,
   };
 };
 
