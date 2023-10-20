@@ -1,0 +1,54 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+table,
+td {
+  border: 1px solid #333;
+}
+
+.table-wrap {
+  margin: 0 auto;
+  margin-top: 90px;
+  width: min-content;
+  max-height: 500px;
+  overflow-y: scroll;
+}
+
+table {
+  margin: 0 auto;
+}
+
+thead,
+tfoot {
+  background-color: #333;
+  color: #fff;
+}
+
+thead {
+  position: sticky;
+  top: 0;
+}
+
+th {
+  padding: 4px 8px;
+  font-weight: 600;
+  cursor: pointer;
+  min-width: 50px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+
+button {
+  cursor: pointer;
+  padding: 4px 6px;
+}
+
+th.active {
+    background-color: #9f3838;
+}
