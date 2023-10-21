@@ -28,7 +28,7 @@ const fs = require("fs");
 const dir = "./";
 
 fs.readdir(dir, (err, files) => {
-  const filesCount = files.length - 2;
+  const filesCount = files.length - 3;
   const casesArr = ["задание", "задания", "заданий"];
   console.log(
     `Ты сделал ${filesCount} ${useCase(
