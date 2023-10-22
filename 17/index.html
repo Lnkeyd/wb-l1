@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./17.js" defer></script>
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      label {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        max-width: 300px;
+      }
+      .suggestions {
+        position: absolute;
+        bottom: -69px;
+      }
+      select {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <label>
+      Введите город
+      <input id="input" type="text" />
+      <div class="suggestions">
+        <select multiple name="map">
+        </select>
+      </div>
+    </label>
+  </body>
+</html>
