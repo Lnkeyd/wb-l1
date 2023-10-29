@@ -30,6 +30,7 @@ const dir = "./";
 fs.readdir(dir, (err, files) => {
   const filesCount = files.length - 3;
   const casesArr = ["задание", "задания", "заданий"];
+  if (filesCount === 29) return console.log('✨Молодец, ты сделал все 29🎉 заданий!✨\n Успехов на защите!😜')
   console.log(
     `Ты сделал ${filesCount} ${useCase(
       filesCount, casesArr
